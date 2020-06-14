@@ -1,0 +1,302 @@
+{
+  "contractName": "LLContract",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.6+commit.6c089d02\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/dsnathan/Projects/Emurgu/Project/LandLease/LLContract/contracts/LLContract.sol\":\"LLContract\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/dsnathan/Projects/Emurgu/Project/LandLease/LLContract/contracts/Client.sol\":{\"keccak256\":\"0x4cb20f42f58acad8396e8629465951391b28596fcb24258eb7b4ac6915902823\",\"urls\":[\"bzz-raw://0d67267bde67218bdd33594ff5b3b40f5885b24513c66f97bb0eccfb89176809\",\"dweb:/ipfs/QmUFq4mFwSJGPw5ZXcCYY2ixipFRcBgQMQpgNYy227rnHW\"]},\"/Users/dsnathan/Projects/Emurgu/Project/LandLease/LLContract/contracts/LLContract.sol\":{\"keccak256\":\"0x8cf3affb47e19bf505ec476235984dff3bc26a8565a229052f49c857314c766a\",\"urls\":[\"bzz-raw://753814dfff50222bb7a8d274de4608d055a3bdb408b2e362b32267d011966465\",\"dweb:/ipfs/QmU96jB7BeBJNUhL7Jwqj86YcMEE86PwxH1e5aX1JUpWs2\"]},\"/Users/dsnathan/Projects/Emurgu/Project/LandLease/LLContract/contracts/Plot.sol\":{\"keccak256\":\"0x2285de6b01f32726591a4de535dcac0029735ba5d7e33c774eda6320b759785b\",\"urls\":[\"bzz-raw://311bb619a2269b7cfcc8edaa246c44348d9d658fb99fe4db56355e9d988ae816\",\"dweb:/ipfs/QmNrza738omDdFWqzHtsz4bCwaEFyjRmuoYQQsEDCWCZ9R\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060d08061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80638da5cb5b14602d575b600080fd5b60336075565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea2646970667358221220f9cc3825031eca0db9375c7cef5f317cc4f410b5802ff67bf452e5e726de053e64736f6c63430006060033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80638da5cb5b14602d575b600080fd5b60336075565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea2646970667358221220f9cc3825031eca0db9375c7cef5f317cc4f410b5802ff67bf452e5e726de053e64736f6c63430006060033",
+  "immutableReferences": {},
+  "sourceMap": "80:66:1:-:0;;;;5:9:-1;2:2;;;27:1;24;17:12;2:2;80:66:1;;;;;;;",
+  "deployedSourceMap": "80:66:1:-:0;;;;5:9:-1;2:2;;;27:1;24;17:12;2:2;80:66:1;;;;;;;;;;;;;;;;12:1:-1;9;2:12;105:20:1;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity >=0.4.21 <0.7.0;\n\nimport \"./Plot.sol\";\nimport \"./Client.sol\";\n\n\ncontract LLContract{\n    address public owner;\n    Plot hPlots;\n\n}",
+  "sourcePath": "/Users/dsnathan/Projects/Emurgu/Project/LandLease/LLContract/contracts/LLContract.sol",
+  "ast": {
+    "absolutePath": "/Users/dsnathan/Projects/Emurgu/Project/LandLease/LLContract/contracts/LLContract.sol",
+    "exportedSymbols": {
+      "LLContract": [
+        553
+      ]
+    },
+    "id": 554,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 546,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:1"
+      },
+      {
+        "absolutePath": "/Users/dsnathan/Projects/Emurgu/Project/LandLease/LLContract/contracts/Plot.sol",
+        "file": "./Plot.sol",
+        "id": 547,
+        "nodeType": "ImportDirective",
+        "scope": 554,
+        "sourceUnit": 1554,
+        "src": "34:20:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/dsnathan/Projects/Emurgu/Project/LandLease/LLContract/contracts/Client.sol",
+        "file": "./Client.sol",
+        "id": 548,
+        "nodeType": "ImportDirective",
+        "scope": 554,
+        "sourceUnit": 545,
+        "src": "55:22:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 553,
+        "linearizedBaseContracts": [
+          553
+        ],
+        "name": "LLContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "8da5cb5b",
+            "id": 550,
+            "mutability": "mutable",
+            "name": "owner",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 553,
+            "src": "105:20:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 549,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "105:7:1",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 552,
+            "mutability": "mutable",
+            "name": "hPlots",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 553,
+            "src": "131:11:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Plot_$1553",
+              "typeString": "contract Plot"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 551,
+              "name": "Plot",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1553,
+              "src": "131:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Plot_$1553",
+                "typeString": "contract Plot"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 554,
+        "src": "80:66:1"
+      }
+    ],
+    "src": "0:146:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/dsnathan/Projects/Emurgu/Project/LandLease/LLContract/contracts/LLContract.sol",
+    "exportedSymbols": {
+      "LLContract": [
+        553
+      ]
+    },
+    "id": 554,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 546,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:1"
+      },
+      {
+        "absolutePath": "/Users/dsnathan/Projects/Emurgu/Project/LandLease/LLContract/contracts/Plot.sol",
+        "file": "./Plot.sol",
+        "id": 547,
+        "nodeType": "ImportDirective",
+        "scope": 554,
+        "sourceUnit": 1554,
+        "src": "34:20:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/dsnathan/Projects/Emurgu/Project/LandLease/LLContract/contracts/Client.sol",
+        "file": "./Client.sol",
+        "id": 548,
+        "nodeType": "ImportDirective",
+        "scope": 554,
+        "sourceUnit": 545,
+        "src": "55:22:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 553,
+        "linearizedBaseContracts": [
+          553
+        ],
+        "name": "LLContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "8da5cb5b",
+            "id": 550,
+            "mutability": "mutable",
+            "name": "owner",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 553,
+            "src": "105:20:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 549,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "105:7:1",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 552,
+            "mutability": "mutable",
+            "name": "hPlots",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 553,
+            "src": "131:11:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Plot_$1553",
+              "typeString": "contract Plot"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 551,
+              "name": "Plot",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1553,
+              "src": "131:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Plot_$1553",
+                "typeString": "contract Plot"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 554,
+        "src": "80:66:1"
+      }
+    ],
+    "src": "0:146:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.6+commit.6c089d02.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x44B4365Dbc4dCDd540d7E7489C744cbdFbB08624",
+      "transactionHash": "0x953217c618bd86667fdcf334a724e8ab681668dc9dbfa5b3f9520c315617756f"
+    }
+  },
+  "schemaVersion": "3.1.0",
+  "updatedAt": "2020-06-13T17:46:49.223Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

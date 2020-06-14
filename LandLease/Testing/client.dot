@@ -1,0 +1,30 @@
+strict digraph {
+  constructor
+  debugGetPlotAdd
+  GetPlotByID
+  ListPlotInfo
+  GetAccBalance [color=yellow]
+  BuyPlotUnits [color=brown]
+  push
+  SellPlotUnit
+  SetPlotUnitReadyForSaleStatus
+  GetPlotUnitsOwnedByMe
+  debugPropertyOwned
+  debugGetPlotUnitsOwnedByMe
+  GetPlotRentValue [color=yellow]
+  LeaseePlot
+  PayRent [color=brown]
+  UnLeasePlot
+  GetPlotUnitsLeasedByMe
+  dubugGetPlotUnitsLeasedByMe
+  debugGetPlotAdd -> GetPlotByID
+  debugGetPlotAdd -> ListPlotInfo
+  BuyPlotUnits -> push
+  SellPlotUnit -> SetPlotUnitReadyForSaleStatus
+  GetPlotUnitsOwnedByMe -> debugPropertyOwned
+  GetPlotUnitsOwnedByMe -> debugGetPlotUnitsOwnedByMe
+  LeaseePlot -> push
+  UnLeasePlot -> push
+  GetPlotUnitsLeasedByMe -> dubugGetPlotUnitsLeasedByMe
+}
+
